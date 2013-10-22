@@ -10,6 +10,7 @@ Final result was a Matlab built software application, with an image database, th
 [Continue reading](https://github.com/aminert/CBIR/blob/master/Report/FeazhAmineCBIR.pdf)
 
 
+![GUI](https://raw.github.com/aminert/CBIR/master/gui.png)
 ##License
 ( The MIT License )
 
