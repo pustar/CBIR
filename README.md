@@ -11,6 +11,19 @@ Final result was a Matlab built software application, with an image database, th
 
 
 ![GUI](https://raw.github.com/aminert/CBIR/master/gui.png)
+
+##Prerequiste tools
+### Color Maps Generation
+To be able to correctly use color histogram features, whether in RGB, HSV, or HMMD color spaces, we need to prepare colormaps that will be used as a feature space (i.e. histogram bins).
+For each of the afromentioned color spaces we intend to extract a global color map that will be used to extract color histograms for all the images in the dataset. The following example reads an image in matlab and extracts an approriate color map, and then use it to generate a histogram represantation.
+      
+      
+      file= ['images/1.jpg']; %Path to the image file
+      rgb_image = imread(file); % Read the image
+      double_image = im2double(rgb_image); % Convert image to double precision
+      [indexed_image color_map] = rgb2ind(double_image,64); %Convert the RGB image to an indexed image, and returns the map
+
+
 ##License
 ( The MIT License )
 
