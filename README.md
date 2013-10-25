@@ -21,7 +21,7 @@ For each of the afromentioned color spaces we intend to extract a global color m
       file= ['images/1.jpg']; %Path to the image file
       rgb_image = imread(file); % Read the image
       double_image = im2double(rgb_image); % Convert image to double precision
-      [indexed_image color_map] = rgb2ind(double_image,64); %Convert the RGB image to an indexed image, and returns the map
+      [indexed_image color_map] = rgb2ind(double_image,64); 
 
 
 ##License
